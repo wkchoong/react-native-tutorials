@@ -1,0 +1,33 @@
+module.exports = {
+  root: true,
+  extends: ['@react-native-community', 'airbnb-typescript', 'prettier'],
+  plugins: ['prettier', 'import'],
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: { jsx: true },
+    project: './tsconfig.json',
+  },
+  rules: {
+    'react/jsx-key': 'error',
+    'import/prefer-default-export': 'off',
+    'no-param-reassign': 'off',
+    'react/prop-types': 'off',
+    'import/named': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'arrow-body-style': 0,
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['off'],
+    '@typescript-eslint/naming-convention': ['off'],
+    '@typescript-eslint/return-await': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    'react-native/no-inline-styles': 'off',
+    'no-extra-boolean-cast': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: false, optionalDependencies: false, peerDependencies: false },
+    ],
+  },
+};

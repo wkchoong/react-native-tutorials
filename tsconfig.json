@@ -1,0 +1,34 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "lib": ["es2017"],
+    "types": ["react-native", "jest"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@types/*": ["./src/types/*"],
+      "@inputs/*": ["./src/inputs/*"],
+      "@types": ["./src/types/index"],
+      "@inputs": ["./src/inputs/index"],
+      "@assets": ["./src/assets/index"],
+    },
+    "typeRoots": ["./src/types"], 
+    "skipLibCheck": true,
+  },
+  "exclude": [
+    "node_modules",
+    "metro.config.js",
+  ]
+}
